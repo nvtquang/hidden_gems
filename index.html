@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Đố biết gửi cho ai 💌</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #ffd1dc, #fff1f5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 1400px;
+    text-align: center;
+    position: relative;
+  }
+
+  /* PHONG BÌ */
+  .envelope {
+    background: white;
+    border-radius: 20px;
+    padding: 40px 20px 70px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    animation: fadeIn 1.2s ease;
+    position: relative;
+  }
+
+  .envelope h1 {
+    font-family: 'Pacifico', cursive;
+    color: #ff4d6d;
+    font-size: 28px;
+  }
+
+  .envelope p {
+    color: #555;
+    margin: 15px 0 25px;
+  }
+
+  .btn {
+    padding: 12px 22px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .read-btn {
+    background: #ff4d6d;
+    color: white;
+    margin-right: 10px;
+  }
+
+  .read-btn:hover {
+    background: #ff1f4a;
+  }
+
+  .no-btn {
+    background: #bdbdbd;
+    color: #333;
+    position: absolute;
+  }
+
+  /* LÁ THƯ */
+  .letter {
+    display: none;
+    background: #fffafc;
+    border-radius: 20px;
+    padding: 30px 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    animation: openLetter 1s ease;
+    text-align: left;
+  }
+
+  .letter h2 {
+    font-family: 'Pacifico', cursive;
+    color: #ff4d6d;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .letter p {
+    color: #444;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes openLetter {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- PHONG BÌ -->
+  <div class="envelope" id="envelope">
+    <h1>Gửi Minh Phương </h1>
+    <p>Quang có đôi điều muốn nói,<br>Phương có muốn đọc không?</p>
+
+    <button class="btn read-btn" onclick="openLetter()">
+      Đọc thư
+    </button>
+
+    <button class="btn no-btn" id="noBtn">
+      Không thèm
+    </button>
+  </div>
+
+  <!-- LÁ THƯ -->
+  <div class="letter" id="letter">
+    <h2>Dear dâm dâm cô nương</h2>
+
+    <p>
+      Hehe tuy đã đi chơi từ t6 nhưng mà giờ Quang mới có đôi lời gửi cho Phương
+    </p>
+
+    <p>
+      Trước tiên là Quang cảm ơn Phương đã 1 lần nữa nhận lời đi chơi với Quang, cảm ơn Phương vì đã lùi lịch về quê để đi chơi hehe. 
+      Hôm qua đi chơi Quang vui lắm, à mà giờ qua chủ nhật rồi, phải là hôm kia.
+      Hôm đấy Quang cười nhiều lắm, cảm ơn vì những câu đùa nhạt vl của Phương, may là Quang cười từ thiện cho đỡ quê đấy 😊
+      Bún bò hôm qua cũng ngon nữa, cảm ơn vì đã cho Quang biết thêm được khẩu vị của Phương. <BR>TỆ VCL</BR>
+      Đùa đấy bún ngon lắm, giờ Quang thêm được 1 quán mới rồi hihi.
+      Gu phim của Phương cũng tệ vcl may là đi xem cùng Phương nên cũng đỡ được phần nào 🤦‍♀️
+    </p>
+
+    <p>
+      Thôi đoạn trên là tớ trêu đấy, đôi lúc tớ thấy tớ trêu hơi quá thật, có thể Quang thấy chỉ là trêu thôi nhưng mà người nghe cũng cảm thấy buồn 1 chút. 
+      Cái này Quang nhận là Quang ngu thật, nên là xin lỗi Phương nhiều lắm.
+      Thật lòng xin lỗi Phương ạ🙇‍♀️🙇‍♀️🙇‍♀️
+      Phương không có phiền đâu, Quang nói thật đấy, nhiều lúc thấy tin nhắn chỉ mong đấy là Phương để bị làm phiền.
+      Nhắn tin với Phương vui lắm, đcm bựa vcl. Nói chuyện với người cùng tần số với mình thích thật hehe.
+      Quang rất thích nhìn Phương cười luôn, thật đấy. Phương cười xinh lắm, răng khểnh xong khuôn miệng còn xinh nữa. Cười lên đáng yêu lắm. Đó là lý do mà Quang 
+      trêu Phương để nhìn thấy Phương cười. Đôi khi nó hơi phản tác dụng như hôm đấy.
+    </p>
+
+    <p>
+      Tớ thích Phương cười lắm, thế nên đừng tự ti nữa nhé, hãy cứ cười nhiều lên, chụp nhiều ảnh cười vào. Sau niềng răng rồi đố xem lại được 😂
+      À còn về món quà, Quang định viết tay xong để vào quà nhưng mà chữ Quang xấu lắm, nên đành gửi quà trước. Phương ở một mình ở trọ, có khi có bạn bè qua, có khi không.
+      Những hôm không có bạn bè Phương lại lủi thủi đi ăn đi chơi 1 mình, nên Quang tặng Phương 1 con gấu bông để Phương bầu bạn cho đỡ buồn. Khi lại cô đơn tủi thân, nhìn vào nó còn biết rằng bên cạnh Phương vẫn còn 
+      những người bạn, những bro như Quang đây sẵn sàng chia sẻ cùng =)))))))))))))))))))). 
+    </p>
+    <p>
+      Dài quá rồi, chung quy lại là cảm ơn Phương nhiều. Và cũng xin lỗi Phương nhiều, đôi khi mồm tớ bôi dầu trơn quá nó đi hơi xa, mong lúc đấy Phương nhắc nhở tớ nhé. 
+      Xin lỗi vì hơi bựa và xin lỗi vì Quang quá đẹp zai và đẳng cấp. À với cả lúc Phương mới ngủ dậy xong gọi Quang là Quang thúi ấy, Quang vui lắm, đặt cho quả biệt danh cute vcl =))))))))))))).
+      <br>Câu cú hơi lủng củng Phương thông cảm nhé hehe<br>
+    </p>
+
+    <p style="text-align:right; margin-top:30px;">
+      — from Quang Thúi
+    </p>
+  </div>
+
+</div>
+
+<script>
+function openLetter() {
+  document.getElementById("envelope").style.display = "none";
+  document.getElementById("letter").style.display = "block";
+}
+
+const noBtn = document.getElementById("noBtn");
+const envelope = document.getElementById("envelope");
+
+noBtn.addEventListener("mouseenter", moveButton);
+noBtn.addEventListener("touchstart", moveButton);
+
+function moveButton() {
+  const envRect = envelope.getBoundingClientRect();
+  const btnRect = noBtn.getBoundingClientRect();
+
+  const maxX = envRect.width - btnRect.width;
+  const maxY = envRect.height - btnRect.height;
+
+  const x = Math.random() * maxX;
+  const y = Math.random() * maxY;
+
+  noBtn.style.left = x + "px";
+  noBtn.style.top = y + "px";
+}
+</script>
+
+</body>
+</html>
